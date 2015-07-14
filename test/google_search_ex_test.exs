@@ -1,7 +1,7 @@
 defmodule GoogleSearchExTest do
   use ExUnit.Case
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "check URI" do
+    IO.puts GoogleSearchEx.get_uri("thing")
   end
 end
