@@ -3,10 +3,12 @@ defmodule GoogleSearchEx.Mixfile do
 
   def project do
     [app: :google_search_ex,
+     description: "An Elixir library for searching with Google."
      version: "0.0.1",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     package: package,
      deps: deps]
   end
 
@@ -29,4 +31,13 @@ defmodule GoogleSearchEx.Mixfile do
   defp deps do
     []
   end
+  
+  defp package do
+  [# These are the default files included in the package
+   files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+   contributors: ["David Parry"],
+   licenses: ["MIT"],
+   links: %{"GitHub" => "https://github.com/suranyami/google_search_ex"}]
+end
+
 end
