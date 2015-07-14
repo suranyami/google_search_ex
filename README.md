@@ -1,4 +1,3 @@
 # GoogleSearchEx
 
-An elixir library for searching with google.
-
+An Elixir library for searching with google.
